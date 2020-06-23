@@ -14,18 +14,15 @@
 } */
 
 .logo {
-  /* 80٪ من النافذة */
-  width: 10%;
-  height: auto;
+  width: auto;
+  height: 65px;
 }
 
 .App-header {
   background-color: white;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row-reverse;
   font-size: calc(10px + 2vmin);
   color: black;
 }
