@@ -7,6 +7,7 @@ function App() {
       <header className="App-header">
         <img src={require("./ebay-logo.png")} className="logo" alt="logo" />
         <p>تسوق حسب الاقسام</p>
+        <input className="searchbar"></input>
       </header>
     </div>
   );

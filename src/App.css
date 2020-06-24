@@ -27,6 +27,11 @@
   color: black;
 }
 
+.searchbar {
+  height: 12px;
+  margin-top: 20px;
+}
+
 .App-link {
   color: #61dafb;
 }
