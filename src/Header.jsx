@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, Toolbar, Grid, Typography, Link, Button, InputBase, Hidden } from '@material-ui/core'
+import { AppBar, Toolbar, Grid, Typography, Link, InputBase, Hidden } from '@material-ui/core'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
