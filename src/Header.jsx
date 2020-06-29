@@ -4,6 +4,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import InputBase from '@material-ui/core/InputBase';
+import Hidden from '@material-ui/core/Hidden';
 
 const useStyles = makeStyles((theme) => ({
   typographyStyle: {
@@ -63,11 +64,13 @@ const Header = () => {
   return (
     <AppBar position="static" color="inherit">
       <Toolbar>
-        <Grid item container xs={5} sm={2} direction="row">
-          <ShoppingCartIcon></ShoppingCartIcon>
-        </Grid>
+        <Hidden mdDown>
+          <Grid item container xs={false} sm={2} direction="row">
+            <ShoppingCartIcon></ShoppingCartIcon>
+          </Grid>
+        </Hidden>
         <Grid item sm={1} xs={1} /> {/* مساحة فارغة(empty space) */}
-        <Grid item container sm={9} xs={6} direction="row-reverse" justify="center" alignItems="center">
+        <Grid item container sm={11} xs={12} direction="row-reverse" justify="center" alignItems="center">
           <img
             src={require('./ebay-logo.png')}
             className={classes.logo}
