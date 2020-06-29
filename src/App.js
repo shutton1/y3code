@@ -1,16 +1,22 @@
 import React from 'react';
 import './App.css';
+import { Grid } from '@material-ui/core';
+import Header from './Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={require('./ebay-logo.png')} className="logo" alt="logo" />
-        <p className="test">تسوق حسب الاقسام</p>
-        <input className="searchbar"></input>
-        <a href="#">Sign Up</a>
-      </header>
-    </div>
+    <Grid container direction="column">
+      <Grid item>
+        <Header></Header>
+      </Grid>
+      <Grid item container>
+        <Grid item xs={1} sm={2}></Grid>
+        <Grid item xs={10} sm={8}>
+          {/* content */}
+        </Grid>
+        <Grid item xs={1} sm={2} />
+      </Grid>
+    </Grid>
   );
 }
 
