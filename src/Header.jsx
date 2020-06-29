@@ -1,7 +1,6 @@
 import React from 'react'
 import { AppBar, Toolbar, Grid, Typography, Link } from '@material-ui/core'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import NotificationsIcon from '@material-ui/icons/Notifications';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import InputBase from '@material-ui/core/InputBase';
@@ -12,6 +11,10 @@ const useStyles = makeStyles((theme) => ({
   },
   iconStyle: {
     flex: 1
+  },
+  logo: {
+    height: 40,
+    width: 'auto',
   },
   search: {
     position: 'relative',
@@ -60,15 +63,14 @@ const Header = () => {
   return (
     <AppBar position="static" color="inherit">
       <Toolbar>
-        <Grid item container xs={5} sm={2} direction="row-reverse">
-          <ShoppingCartIcon className={classes.iconStyle}></ShoppingCartIcon>
-          <NotificationsIcon></NotificationsIcon>
+        <Grid item container xs={5} sm={2} direction="row">
+          <ShoppingCartIcon></ShoppingCartIcon>
         </Grid>
         <Grid item sm={1} xs={1} /> {/* مساحة فارغة(empty space) */}
-        <Grid item container sm={9} xs={6} direction="row-reverse">
+        <Grid item container sm={9} xs={6} direction="row-reverse" justify="center" alignItems="center">
           <img
             src={require('./ebay-logo.png')}
-            className="logo"
+            className={classes.logo}
             alt="logo"
           />
           <div className={classes.search}>
