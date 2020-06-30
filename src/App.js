@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import { Grid } from '@material-ui/core';
-import Header from './Header';
+import Header from './Header.jsx';
+import Carousel from './Carousel.jsx';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Grid item container>
         <Grid item xs={1} sm={2}></Grid>
         <Grid item xs={10} sm={8}>
-          {/* content */}
+          <Carousel></Carousel>
         </Grid>
         <Grid item xs={1} sm={2} />
       </Grid>
