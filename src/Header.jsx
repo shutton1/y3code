@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Grid, Typography, InputBase, Hidden } from '@material-
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   typographyStyle: {
