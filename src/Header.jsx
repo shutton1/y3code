@@ -1,8 +1,9 @@
 import React from 'react'
-import { AppBar, Toolbar, Grid, Typography, Link, InputBase, Hidden } from '@material-ui/core'
+import { AppBar, Toolbar, Grid, Typography, InputBase, Hidden } from '@material-ui/core'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   typographyStyle: {
@@ -69,11 +70,13 @@ const Header = () => {
         </Hidden>
         <Grid item sm={1} xs={1} /> {/* مساحة فارغة(empty space) */}
         <Grid item container sm={11} xs={12} direction="row-reverse" justify="center" alignItems="center">
-          <img
-            src={require('./ebay-logo.png')}
-            className={classes.logo}
-            alt="logo"
-          />
+          <Link to="/">
+            <img
+              src={require('./ebay-logo.png')}
+              className={classes.logo}
+              alt="logo"
+            />
+          </Link>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
@@ -88,8 +91,8 @@ const Header = () => {
             />
           </div>
           <Typography>
-            <Link href="#" onClick={() => {
-              console.info("sign in")
+            <Link to="/login" onClick={() => {
+              console.info("login")
             }}>
               تسجيل الدخول
             </Link>
