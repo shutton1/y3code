@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
 import { Grid } from '@material-ui/core';
-import Header from './Header.jsx';
-import Home from './Home.jsx'
-import Login from './Login.jsx'
-
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+
+import Header from './Header.jsx';
+import Home from './Home.jsx'
+import Login from './Login.jsx'
 
 function App() {
   return (
