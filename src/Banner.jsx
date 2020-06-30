@@ -25,7 +25,7 @@ const useStyles = makeStyles(() => ({
   }
 }))
 
-const Carousel = () => {
+const Banner = () => {
   const classes = useStyles();
   
   return (
@@ -37,4 +37,4 @@ const Carousel = () => {
   )
 }
 
-export default Carousel;
+export default Banner;
