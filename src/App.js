@@ -24,6 +24,12 @@ function App() {
           matches the current URL. Use a <Switch> any time
           you have multiple routes, but you want only one
           of them to render at a time
+
+          <Switch> ينظر من خلال جميع أطفاله <Route>
+          العناصر ويجعل أول واحد مساره
+          يطابق عنوان URL الحالي. استخدم <Switch> في أي وقت
+          لديك طرق متعددة ، ولكنك تريد واحدًا فقط
+          منهم لتقديم في وقت واحد
         */}
         <Switch>
           <Route exact path="/">
