@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
@@ -20,8 +22,14 @@ const useStyles = makeStyles(() => ({
   },
   bannerSecondaryText: {
     position: "absolute",
-    top: "40%%",
+    top: "40%",
     left: "20%"
+  },
+  bannerButton: {  
+    position: "absolute",
+    top: "60%",
+    left: "20%",
+    width: "20%",
   }
 }))
 
@@ -32,6 +40,7 @@ const Banner = () => {
     <div className={classes.bannerContainer}>
       <h1 className={classes.bannerText}>قم بشراء ملابس قريبة</h1>
       <h1 className={classes.bannerSecondaryText}>Buy clothes nearby</h1>
+      <Button variant="outlined" className={classes.bannerButton}>See more<ArrowRightAltIcon></ArrowRightAltIcon></Button>
       <img className={classes.banner} alt="clothes" src={require('./clothes.jpg')}></img>
     </div>
   )
