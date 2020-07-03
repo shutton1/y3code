@@ -90,16 +90,29 @@ const Header = () => {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
-          <Typography>
+          <Typography className={classes.typographyStyle}>
             <Link to="/login" onClick={() => {
               console.info("login")
             }}>
-              تسجيل الدخول
+              تسجيل الدخول (Login)
             </Link>
           </Typography>
           <Typography className={classes.typographyStyle}>عروض اليوم</Typography> {/* Daily deals */}
           <Typography className={classes.typographyStyle}>المساعدة</Typography> {/* Help */}
-          <Typography className={classes.typographyStyle}>يبيع</Typography> {/* Sell */}
+          <Typography className={classes.typographyStyle}>
+              <Link to="/sell" onClick={() => {
+                console.info("Sell")
+            }}>
+           يبيع  (Sell) 
+          </Link>
+          </Typography>
+          <Typography className={classes.typographyStyle}>
+            <Link to="/shop" onClick={() => {
+                console.info("shop")
+            }}>
+            متجر (Shop) 
+            </Link>
+            </Typography> {/* Shop */}
         </Grid>
       </Toolbar>
     </AppBar>

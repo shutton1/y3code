@@ -10,6 +10,8 @@ import {
 import Header from './Header.jsx';
 import Home from './Home.jsx'
 import Login from './Login.jsx'
+import Upload from './Upload';
+import Shop from './Shop';
 
 function App() {
   return (
@@ -37,6 +39,12 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/sell">
+            <Upload/>
+          </Route>
+          <Route path="/shop">
+            <Shop/>
           </Route>
         </Switch>
       </Grid>

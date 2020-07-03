@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: purple;
+}
+
+table {
+  background-color: lightcyan;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.posts {
+  margin: auto;
+  width: 50%;
+}
+
