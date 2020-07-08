@@ -12,6 +12,8 @@ import Home from './Home.jsx'
 import Login from './Login.jsx'
 import Upload from './Upload';
 import Shop from './Shop';
+import db from './firebase';
+
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
           لديك طرق متعددة ، ولكنك تريد واحدًا فقط
           منهم لتقديم في وقت واحد
         */}
+
         <Switch>
           <Route exact path="/">
             <Home />
@@ -49,6 +52,7 @@ function App() {
         </Switch>
       </Grid>
     </Router>
+
   );
 }
 

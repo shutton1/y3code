@@ -25,8 +25,8 @@ const Upload = () => {
   
   const handleSubmit = e => {
     e.preventDefault();
-    db.collection("posts")
-      .add({
+    db.collection("posts").doc("post1")
+      .set({
         url: url,
         title: title,
         price: price,
